@@ -1,0 +1,213 @@
+{
+  "name": "@vidavidorra/prettier-config",
+  "version": "0.1.0",
+  "description": "Prettier configuration",
+  "keywords": [
+    "prettier",
+    "config",
+    "configuration"
+  ],
+  "homepage": "https://github.com/vidavidorra/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/vidavidorra/prettier-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidavidorra/prettier-config.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Jeroen de Bruijn",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "files": [
+    "./dist/**/!(*.test).{js,d.ts,cjs}"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"**/*.{vue,css,less,scss,html,htm,json,md,markdown,yml,yaml}\" --log-level warn",
+    "format:check": "prettier --check \"**/*.{vue,css,less,scss,html,htm,json,md,markdown,yml,yaml}\" --log-level warn",
+    "lint": "npm run format:check && eslint",
+    "lint:fix": "npm run format && eslint --fix",
+    "prepare": "husky .github/husky",
+    "test": "c8 ava"
+  },
+  "commitlint": {
+    "extends": [
+      "@vidavidorra"
+    ]
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "singleQuote": true
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "releaseRules": [
+            {
+              "type": "perf",
+              "release": "patch"
+            },
+            {
+              "type": "revert",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "chore",
+              "release": false
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            },
+            {
+              "type": "build",
+              "release": "patch"
+            },
+            {
+              "type": "ci",
+              "release": "patch"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "prettier --write CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "tarballDir": "dist"
+        }
+      ],
+      "@semantic-release/git",
+      [
+        "@semantic-release/github",
+        {
+          "assets": "dist/*.tgz"
+        }
+      ]
+    ],
+    "preset": "conventionalcommits",
+    "presetConfig": {
+      "types": [
+        {
+          "type": "feat",
+          "section": "Features"
+        },
+        {
+          "type": "fix",
+          "section": "Bug Fixes"
+        },
+        {
+          "type": "perf",
+          "section": "Performance Improvements"
+        },
+        {
+          "type": "revert",
+          "section": "Reverts"
+        },
+        {
+          "type": "docs",
+          "section": "Documentation"
+        },
+        {
+          "type": "style",
+          "section": "Styles"
+        },
+        {
+          "type": "chore",
+          "section": "Miscellaneous Chores",
+          "hidden": true
+        },
+        {
+          "type": "refactor",
+          "section": "Code Refactoring"
+        },
+        {
+          "type": "test",
+          "section": "Tests"
+        },
+        {
+          "type": "build",
+          "section": "Build System"
+        },
+        {
+          "type": "ci",
+          "section": "Continuous Integration"
+        }
+      ]
+    }
+  },
+  "ava": {
+    "files": [
+      "src/**/*.test.ts"
+    ],
+    "typescript": {
+      "rewritePaths": {
+        "src/": "dist/"
+      },
+      "compile": "tsc"
+    }
+  },
+  "c8": {
+    "all": true,
+    "include": [
+      "dist/**/*.js"
+    ],
+    "reporter": [
+      "cobertura",
+      "html",
+      "lcovonly",
+      "text-summary"
+    ]
+  },
+  "devDependencies": {
+    "@ava/typescript": "6.0.0",
+    "@commitlint/cli": "20.2.0",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/exec": "7.1.0",
+    "@semantic-release/git": "10.0.1",
+    "@vidavidorra/commitlint-config": "7.1.5",
+    "ava": "6.4.1",
+    "c8": "10.1.3",
+    "eslint": "9.39.1",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
+    "prettier": "3.7.4",
+    "semantic-release": "25.0.2",
+    "typescript": "5.9.3",
+    "xo": "1.2.3"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
