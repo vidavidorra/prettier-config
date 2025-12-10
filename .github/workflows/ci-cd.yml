@@ -48,3 +48,4 @@ jobs:
       - code-coverage
     secrets:
       privateKey: ${{ secrets.RELEASE_PRIVATE_KEY }}
+      npmToken: ${{ secrets.NPM_TOKEN }}
