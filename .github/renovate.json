@@ -1,12 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>vidavidorra/.github"],
-  "packageRules": [
-    {
-      "description": "Update dep-dependencies used in package with fix type",
-      "extends": [":semanticPrefixFix"],
-      "ignorePresets": [":semanticPrefixFixDepsChoreOthers"],
-      "matchPackageNames": ["!sinon", "!/^@types//", "*"]
-    }
-  ]
+  "extends": ["github>vidavidorra/.github"]
 }
