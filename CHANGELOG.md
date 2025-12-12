@@ -1,3 +1,7 @@
+## <small>1.0.2 (2025-12-12)</small>
+
+- fix(deps): update dependency @vidavidorra/commitlint-config to v7.1.6 ([0c3584a](https://github.com/vidavidorra/prettier-config/commit/0c3584a))
+
 ## <small>1.0.1 (2025-12-10)</small>
 
 - Revert "ci: configure `NPM_TOKEN` for the initial package deployment" ([3c5b841](https://github.com/vidavidorra/prettier-config/commit/3c5b841))
