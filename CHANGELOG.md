@@ -1,3 +1,7 @@
+## <small>1.0.4 (2025-12-12)</small>
+
+- ci: remove Renovate rule to update dev-dependencies with `fix`-commit ([ee3353b](https://github.com/vidavidorra/prettier-config/commit/ee3353b))
+
 ## <small>1.0.3 (2025-12-12)</small>
 
 - docs: fix typo `documenation.` > `documentation` ([5c60480](https://github.com/vidavidorra/prettier-config/commit/5c60480))
