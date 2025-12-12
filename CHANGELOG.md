@@ -1,3 +1,7 @@
+## <small>1.0.3 (2025-12-12)</small>
+
+- docs: fix typo `documenation.` > `documentation` ([5c60480](https://github.com/vidavidorra/prettier-config/commit/5c60480))
+
 ## <small>1.0.2 (2025-12-12)</small>
 
 - fix(deps): update dependency @vidavidorra/commitlint-config to v7.1.6 ([0c3584a](https://github.com/vidavidorra/prettier-config/commit/0c3584a))
