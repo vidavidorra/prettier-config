@@ -29,7 +29,7 @@ npm install --save-dev @vidavidorra/prettier-config prettier
 
 ## Usage
 
-Use this configuration in your project's [**Prettier**][prettier] configuration by specifying it as string value in the configuration, as documented in the [**Prettier**][prettier] [Using a Shareable Config](https://prettier.io/docs/sharing-configurations#using-a-shareable-config) documenation. In the your `package.json` this is simply the `prettier` key with the plugin name as value, as shown in the following example.
+Use this configuration in your project's [**Prettier**][prettier] configuration by specifying it as string value in the configuration, as documented in the [**Prettier**][prettier] [Using a Shareable Config](https://prettier.io/docs/sharing-configurations#using-a-shareable-config) documentation. In the your `package.json` this is simply the `prettier` key with the plugin name as value, as shown in the following example.
 
 ```json
 {
