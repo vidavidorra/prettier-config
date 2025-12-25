@@ -1,21 +1,34 @@
-## <small>1.0.4 (2025-12-12)</small>
+## [1.0.4](https://github.com/vidavidorra/prettier-config/compare/v1.0.3...v1.0.4) (2025-12-12)
 
-- ci: remove Renovate rule to update dev-dependencies with `fix`-commit ([ee3353b](https://github.com/vidavidorra/prettier-config/commit/ee3353b))
+### Continuous Integration
 
-## <small>1.0.3 (2025-12-12)</small>
+- remove Renovate rule to update dev-dependencies with `fix`-commit ([ee3353b](https://github.com/vidavidorra/prettier-config/commit/ee3353b7878f7278be6e8c285b7598a14f878a07))
 
-- docs: fix typo `documenation.` > `documentation` ([5c60480](https://github.com/vidavidorra/prettier-config/commit/5c60480))
+## [1.0.3](https://github.com/vidavidorra/prettier-config/compare/v1.0.2...v1.0.3) (2025-12-12)
 
-## <small>1.0.2 (2025-12-12)</small>
+### Documentation
 
-- fix(deps): update dependency @vidavidorra/commitlint-config to v7.1.6 ([0c3584a](https://github.com/vidavidorra/prettier-config/commit/0c3584a))
+- fix typo `documenation.` > `documentation` ([5c60480](https://github.com/vidavidorra/prettier-config/commit/5c60480f88a0e44167e16d3874a7ba48b28844b6))
 
-## <small>1.0.1 (2025-12-10)</small>
+## [1.0.2](https://github.com/vidavidorra/prettier-config/compare/v1.0.1...v1.0.2) (2025-12-12)
 
-- Revert "ci: configure `NPM_TOKEN` for the initial package deployment" ([3c5b841](https://github.com/vidavidorra/prettier-config/commit/3c5b841))
+### Bug Fixes
+
+- **deps:** update dependency @vidavidorra/commitlint-config to v7.1.6 ([0c3584a](https://github.com/vidavidorra/prettier-config/commit/0c3584aab6f7caa22b431308601aaf1cc6370e58))
+
+## [1.0.1](https://github.com/vidavidorra/prettier-config/compare/v1.0.0...v1.0.1) (2025-12-10)
+
+### Reverts
+
+- Revert "ci: configure `NPM_TOKEN` for the initial package deployment" ([3c5b841](https://github.com/vidavidorra/prettier-config/commit/3c5b841d8ecac555590db284b2c1134d6318d371))
 
 ## 1.0.0 (2025-12-10)
 
-- ci: configure `NPM_TOKEN` for the initial package deployment ([823ff4f](https://github.com/vidavidorra/prettier-config/commit/823ff4f))
-- ci: replace `xo` with `eslint` in lint-staged configuration ([ae02826](https://github.com/vidavidorra/prettier-config/commit/ae02826))
-- feat: add Prettier configuration ([9bfc505](https://github.com/vidavidorra/prettier-config/commit/9bfc505))
+### Features
+
+- add Prettier configuration ([9bfc505](https://github.com/vidavidorra/prettier-config/commit/9bfc50558a2e88fa67a4835015f4b932c9db651f))
+
+### Continuous Integration
+
+- configure `NPM_TOKEN` for the initial package deployment ([823ff4f](https://github.com/vidavidorra/prettier-config/commit/823ff4ff7f73590866c821e01725a5f72d19da6d))
+- replace `xo` with `eslint` in lint-staged configuration ([ae02826](https://github.com/vidavidorra/prettier-config/commit/ae0282687a134d6317afe46f6a8caf96c955bc61))
