@@ -1,5 +1,9 @@
 ## [1.0.5](https://github.com/vidavidorra/prettier-config/compare/v1.0.4...v1.0.5) (2025-12-25)
 
+### Continuous Integration
+
+- replace semantic-release config with `@vidavidorra/semantic-release-config` ([a6e0cbc](https://github.com/vidavidorra/prettier-config/commit/a6e0cbcd3516a7897596efd7cf9c41bff3a1577a))
+
 ## [1.0.4](https://github.com/vidavidorra/prettier-config/compare/v1.0.3...v1.0.4) (2025-12-12)
 
 ### Continuous Integration
