@@ -74,7 +74,7 @@
   "devDependencies": {
     "@ava/typescript": "6.0.0",
     "@commitlint/cli": "20.2.0",
-    "@vidavidorra/commitlint-config": "7.1.6",
+    "@vidavidorra/commitlint-config": "7.1.8",
     "@vidavidorra/eslint-config": "1.0.3",
     "@vidavidorra/semantic-release-config": "1.0.4",
     "ava": "6.4.1",
