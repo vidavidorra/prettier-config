@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/vidavidorra/prettier-config/compare/v1.0.6...v1.0.7) (2026-02-28)
+
+### Bug Fixes
+
+- **deps:** remove conventional-changelog-conventionalcommits override ([9eedd35](https://github.com/vidavidorra/prettier-config/commit/9eedd3521b3d03e5b7972711f2004628fb420d81))
+
 ## [1.0.6](https://github.com/vidavidorra/prettier-config/compare/v1.0.5...v1.0.6) (2025-12-25)
 
 ### Continuous Integration
