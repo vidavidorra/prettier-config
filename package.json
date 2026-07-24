@@ -73,7 +73,7 @@
     "@vidavidorra/eslint-config": "2.0.4",
     "@vidavidorra/semantic-release-config": "2.0.4",
     "ava": "8.0.1",
-    "c8": "11.0.0",
+    "c8": "12.0.0",
     "eslint": "10.7.0",
     "husky": "9.1.7",
     "lint-staged": "17.1.0",
